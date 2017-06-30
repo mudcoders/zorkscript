@@ -14,6 +14,27 @@ Some basic command aliases:
 - `new String()` -> `craft String named $var`
 - `$var = "value"` -> `put "value" in $var`
 
+### Arrays
+
+If arrays are treated like all other standard object types (`Int`, `String`, etc.), then creating an array would look something like this:
+
+```
+craft Array named $array
+craft String named $string
+
+put "test" in $string
+put $string in $array
+```
+
+With this structure, the same concept could be applied to create multidimentional arrays:
+
+```
+craft Array named $array1
+craft Array named $array2
+
+put $array1 in $array2
+```
+
 ### Functions
 
 In ZorkScript, functions are structured like "spells." For example, the following pseudocode:
